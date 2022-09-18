@@ -34,9 +34,9 @@ app.use('/images', express.static('images'));
 // app.get('/contact',(req,res)=>{
 //     res.send('hey world');
 // })
-app.get('/',(req,res)=>{
-    res.send('server started');
-})
+// app.get('/',(req,res)=>{
+//     res.send('server started');
+// })
 
 
 const PORT = process.env.PORT || 5000;
