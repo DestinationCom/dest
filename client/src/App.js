@@ -1,8 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
 import SideMenu from "./components/SideMenu";
-import { makeStyles, CssBaseline, createMuiTheme, ThemeProvider } from '@material-ui/core';
- 
+import { makeStyles, CssBaseline, ThemeProvider } from '@material-ui/core';
+import { createTheme } from '@material-ui/core/styles';
 import Navbar from './components/Navbar'
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -27,7 +28,7 @@ import Admin from './admin/admin';
 
 
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#333996",
