@@ -51,7 +51,7 @@ export default function Login({handleClick,handleFeed}) {
       password: data.get('password'),
     });
 
-     let url='/signin';
+     let url='/api/signin';
      
     const res = await fetch(url, {
       method:"POST",

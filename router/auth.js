@@ -147,7 +147,7 @@ router.post('/register/add_vehicle',upload.single('photo'), async (req,res) =>{
 
 
 
-router.post('https://destapp1.herokuapp.com/signin', async(req,res)=>{
+router.post('/api/signin', async(req,res)=>{
 
     try{
         const { vehicle_num ,mobile_num,password }=req.body;
