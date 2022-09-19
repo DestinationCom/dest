@@ -2,10 +2,10 @@
 
 import {useNavigate} from 'react-router-dom'; 
 export default function Card (props) {
-  const imagePath ="http://localhost:5000/images/"+ props.car_image;
+  const imagePath ="https://destapp1.herokuapp.com/images/"+ props.car_image;
   
   
-    
+  // http://localhost:5000/
     const navigate=useNavigate();
     const details=(v1,v2)=>()=>{
             console.log(props.mobile_num,props.vehicle_num)
