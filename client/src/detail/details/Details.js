@@ -61,7 +61,8 @@ export default function Details (props) {
           console.log(json);
           setUsers(json);
           console.log((json.car_image));
-          setPath("http://localhost:5000/images/"+json.car_image);
+          setPath("https://destapp1.herokuapp.com/"+json.car_image)
+          // setPath("http://localhost:5000/images/"+json.car_image);
     
         } catch (error) {
           console.log("error", error);
