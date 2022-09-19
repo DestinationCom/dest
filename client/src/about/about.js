@@ -37,7 +37,9 @@ const About =() =>{
             const data = await res.json();
             console.log(data);
             setVehicle(data);
-             setPath("http://localhost:5000/images/"+data.car_image);
+            // const imagePath ="https://destapp1.herokuapp.com/images/"+ props.car_image;
+  
+             setPath("https://destapp1.herokuapp.com/images/"+data.car_image);
              console.log(imagePath)
             
             if(res.status !== 200){
