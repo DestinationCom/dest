@@ -163,12 +163,12 @@ router.post('/api/signin', async(req,res)=>{
             console.log('tokenSignin',token);
 
             res.cookie('mernjwt',token,{
-                expires:new Date(Date.now()+ 3000000),
+                expires:new Date(Date.now()+ 900000),
                 // 300000
                 httpOnly:true
             });
 
-            res.status(200).json({message:'Login Successful',"token":token});
+            res.status(200).json({message:'Login Successful',key:process.env.SECRETE_KEY,"token":token});
         }
         else{
             res.status(400).json({error:'Invalid Credentials'});
