@@ -32,8 +32,8 @@ return (
 			<FooterLink href="/register">Registration</FooterLink>
 			<FooterLink href="/signup">Login</FooterLink>
 			<FooterLink href="/premium">Premium</FooterLink>
-			<FooterLink href="#">Change Password</FooterLink>
-			<FooterLink href="#">Forget Password</FooterLink>
+			<FooterLink href="/change_password">Change Password</FooterLink>
+			<FooterLink href="/forget_password">Forget Password</FooterLink>
 			
 			
 			
