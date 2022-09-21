@@ -116,7 +116,7 @@ export default function Login({handleClick,handleFeed}) {
           
           
           <Typography component="h1" variant="h5">
-            Sign-In
+            Login-In
           </Typography>
 
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
@@ -164,7 +164,7 @@ export default function Login({handleClick,handleFeed}) {
               sx={{ mt: 3, mb: 2 }}
               onClick={handleFeed}
             >
-              Sign In
+              Login In
             </Button><br/><br/>
             <Grid container>
               <Grid item xs style={{ display: "flex", justifyContent: "space-between" }}>
