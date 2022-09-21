@@ -165,7 +165,8 @@ router.post('/api/signin', async(req,res)=>{
             res.cookie('mernjwt',token,{
                 expires:new Date(Date.now()+ 900000),
                 // 300000
-                httpOnly:true
+                httpOnly:true,
+                domain:'http://destapp1.herokuapp.com'
             });
 
             res.status(200).json({message:'Login Successful',key:process.env.SECRETE_KEY,"token":token});
