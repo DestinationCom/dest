@@ -3,8 +3,9 @@ const express = require("express");
 
 const app = express();
 const User = require("./model/userSchema");
-const cookieParser = require("cookie-parser");
+
 const router = require("./router/auth");
+const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
 

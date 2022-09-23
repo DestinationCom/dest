@@ -5,7 +5,8 @@ const authenticate = require("../authenticate");
 const bodyParser= require("body-parser");
 router.use(bodyParser.json());
 
-
+const cookieParser = require("cookie-parser");
+router.use(cookieParser());
 require('../db/connection');
 
 const User = require('../model/userSchema');
@@ -165,11 +166,11 @@ router.post('/api/signin', async(req,res)=>{
             res.cookie('mernjwt',token,{
                 expires:new Date(Date.now()+ 900000),
                 // 300000
-                httpOnly:true,
+                httpOnly:false,
                 domain:'http://destapp1.herokuapp.com'
             });
 
-            res.status(200).json({message:'Login Successful',key:process.env.SECRETE_KEY,"token":token});
+            res.status(200).json({message:'Login Successful'});
         }
         else{
             res.status(400).json({error:'Invalid Credentials'});
