@@ -38,7 +38,7 @@ export const navItems = [
   },
   {
     id: 5,
-    title: "Sign-In",
+    title: "Login",
     path: "./signup",
     nName: "nav-item",
     sName: "sidebar-item",
