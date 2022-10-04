@@ -60,7 +60,7 @@ router.post('/orders', async(req,res)=>{
 
 
 
-router.post("/api/verify",async(req,res)=>{
+router.post("/verify",async(req,res)=>{
     try{
        
         console.log(req.body.vehicle_num,req.body.mobile_num,req.body.response.razorpay_order_id,
