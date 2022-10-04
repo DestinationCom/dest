@@ -89,6 +89,7 @@ export default function Premium (props) {
         amount:data.amount,
         currency:data.currency,
         order_id:data.id,
+        description:"Destination Mart",
         handler:async(response)=>{
           try{
        
@@ -158,7 +159,9 @@ export default function Premium (props) {
 
                 const orderUrl = "/api/orders";
                 const {data} = await axios.post(orderUrl,{
-                  amount:formData.amount});
+                  amount:formData.amount,
+                  vehicle_number:formData1.vehicle_number,
+                  mobile_number:formData1.mobile_number});
                 console.log(data)
                 initialPayment(data)
               }catch(error){

@@ -24,7 +24,7 @@ const User = require('./model/userSchema');
 const { request } = require('http');
 
 // router.post('/createOrder',createOrder);
-router.post('/api/orders', async(req,res)=>{
+router.post('/orders', async(req,res)=>{
     try{
         var vehicle = User.findOne({vehicle_num:req.body.vehicle_number,
             mobile_num:req.body.mobile_number})
