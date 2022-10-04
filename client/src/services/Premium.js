@@ -84,7 +84,7 @@ export default function Premium (props) {
 
     const initialPayment = (data)=>{
       const options ={
-        key:'rzp_test_5e8rpNZIajBxf3',
+        key:'rzp_live_FeM93NH2Jy8e7l',
        
         amount:data.amount,
         currency:data.currency,

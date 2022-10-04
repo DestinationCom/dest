@@ -22,8 +22,8 @@ const schedule = require('./schedule_jobs')
 app.use(require('./router/auth'));
 // app.use(require('./router/sms'));
 
-// const paymentRouter= require('./paymentRouter');
-// app.use('/api',paymentRouter);
+const paymentRouter= require('./paymentRouter');
+app.use('/api',paymentRouter);
 
 
 
