@@ -44,8 +44,11 @@ const Razorpay = require('razorpay');
 // const dotenv = require("dotenv");
 const uniqId = require('uniqid');
 // dotenv.config({path:'./config.env'});
-const KEY_ID = process.env.KEY_ID;
-const KEY_SECRETE = process.env.KEY_SECRETE;
+const KEY_ID = process.env.KEY_ID_LIVE;
+const KEY_SECRETE = process.env.KEY_SECRETE_LIVE;
+
+// const KEY_ID = process.env.KEY_ID_TEST;
+// const KEY_SECRETE = process.env.KEY_SECRETE_TEST;
 
 
 require('./db/connection');
