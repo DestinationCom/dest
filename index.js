@@ -117,7 +117,7 @@ app.post("/api/verify",async(req,res)=>{
 
             if(updateUser.last_payment_date === null){
                 console.log("last_payment is null")
-                if(Number(amount) === 50){
+                if(Number(amount) === 1){
                     console.log(updateUser.last_payment_date,'null','50')
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
@@ -130,7 +130,7 @@ app.post("/api/verify",async(req,res)=>{
                     })
                 }
                
-                else if (Number(amount) === 140){
+                else if (Number(amount) === 2){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -142,7 +142,7 @@ app.post("/api/verify",async(req,res)=>{
                     })
                     
                 }
-                else if (Number(amount) === 270){
+                else if (Number(amount) === 3){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -152,7 +152,7 @@ app.post("/api/verify",async(req,res)=>{
                         amount:Number(amount)
                         }
                     })
-                }else if(Number(amount) === 520){
+                }else if(Number(amount) === 4){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -174,7 +174,7 @@ app.post("/api/verify",async(req,res)=>{
                 console.log("last_payment is not null",new Date(updateUser.next_expiry_date), 
                 new Date(Date.now()),(new Date(updateUser.next_expiry_date )),moment(updateUser.next_expiry_date).add(1,'days'));
                 if(updateUser.next_expiry_date >= Date.now()){
-                if(Number(amount) === 50){
+                if(Number(amount) === 1){
                     console.log(updateUser.last_payment_date,updateUser.next_expiry_date,'null1')
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
@@ -187,7 +187,7 @@ app.post("/api/verify",async(req,res)=>{
                     })
                 }
                
-                else if (Number(amount) === 140){
+                else if (Number(amount) === 2){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -199,7 +199,7 @@ app.post("/api/verify",async(req,res)=>{
                     })
                     console.log(userUpdate,userUpdate.modifiedCount);
                 }
-                else if (Number(amount) === 270){
+                else if (Number(amount) === 3){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -209,7 +209,7 @@ app.post("/api/verify",async(req,res)=>{
                         amount:Number(amount)
                         }
                     })
-                }else if(Number(amount) === 520){
+                }else if(Number(amount) === 4){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -231,7 +231,7 @@ app.post("/api/verify",async(req,res)=>{
 
                 console.log(updateUser.last_payment_date,updateUser.next_expiry_date,'null3')
             {
-                if(Number(amount) === 50){
+                if(Number(amount) === 1){
 
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
@@ -244,7 +244,7 @@ app.post("/api/verify",async(req,res)=>{
                     })
                 }
                
-                else if (Number(amount) === 140){
+                else if (Number(amount) === 2){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -256,7 +256,7 @@ app.post("/api/verify",async(req,res)=>{
                     })
                     console.log(userUpdate,userUpdate.modifiedCount);
                 }
-                else if (Number(amount) === 270){
+                else if (Number(amount) === 3){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,
@@ -266,7 +266,7 @@ app.post("/api/verify",async(req,res)=>{
                         amount:Number(amount)
                         }
                     })
-                }else if(Number(amount) === 520){
+                }else if(Number(amount) === 4){
                     var userUpdate = await User.updateOne({vehicle_num:vehicle_num,mobile_num:mobile_num},{
                         $set:{
                         order_id :req.body.response.razorpay_order_id,

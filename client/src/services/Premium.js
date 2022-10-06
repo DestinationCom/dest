@@ -47,7 +47,7 @@ export default function Premium (props) {
     setCredStatus('')
     setFormData({
       ...formData,
-      amount:50
+      amount:1
     });
     
    
@@ -57,7 +57,7 @@ export default function Premium (props) {
     setCredStatus('')
     setFormData({
       ...formData,
-      amount:140
+      amount:2
     });
 
     
@@ -67,7 +67,7 @@ export default function Premium (props) {
     setCredStatus('')
     setFormData({
       ...formData,
-      amount:270
+      amount:3
     });
     
   }
@@ -76,7 +76,7 @@ export default function Premium (props) {
     setCredStatus('')
     setFormData({
       ...formData,
-      amount:520
+      amount:4
     });
     
   }
