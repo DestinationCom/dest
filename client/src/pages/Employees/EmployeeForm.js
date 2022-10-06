@@ -297,7 +297,8 @@ const initialFValues = {
         // }
         try{
         
-        const res = await axios.post("/register/add_vehicle", formData
+        // const res = await axios.post("/register/add_vehicle", formData
+        const res = await axios.post("/register", formData
         // {
             // method:"POST",
             // headers:{

@@ -102,7 +102,8 @@ router.post('/register/update_vehicle_withoutImage', async (req,res) =>{
 })
 
 
-router.post('/register/add_vehicle',upload.single('photo'), async (req,res) =>{
+// router.post('/register/add_vehicle',upload.single('photo'), async (req,res) =>{
+    router.post('/register',upload.single('photo'), async (req,res) =>{
     const {password ,vehicle_num ,mobile_num ,vehicle_type ,ac_type
         ,home_city ,locality  ,vehicle_model ,india_states ,maharashtra_districts ,max_weight 
         ,rate_kms ,rate_ton,no_of_seats ,rate_hr,state_active,amount}=req.body;
