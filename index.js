@@ -363,7 +363,7 @@ app.use('/images', express.static('images'));
 const PORT = process.env.PORT || 5000;
 
 
-
+const path = require("path");
 // 3. Steps in Heroku:
 if (process.env.NODE_ENV =="production"){
     app.use(express.static("client/build"));
