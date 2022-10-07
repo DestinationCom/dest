@@ -12,7 +12,7 @@ app.use(cookieParser());
 const Authenticate = async(req, res, next)=>{
     try{
         console.log("inside try")
-    const token = req.cookies.mernjwt;
+    const token = req.Set-Cookie.mernjwt;
     console.log("tokenBody",token);
     const verifyToken = jwt.verify(token, process.env.SECRETE_KEY);
 
