@@ -31,7 +31,7 @@ const About =() =>{
                 },
                 
               
-                credentials:"include"
+                
             });
 
             const data = await res.json();

@@ -56,7 +56,8 @@ export default function Login({handleClick,handleFeed}) {
     const res = await fetch(url, {
       method:"POST",
       headers:{
-          "Content-Type":"application/json"
+          "Content-Type":"application/json",
+          credentials:"include"
       },
       body:JSON.stringify({
           vehicle_num:(data.get('vehicle_number')).toUpperCase(),
@@ -65,7 +66,7 @@ export default function Login({handleClick,handleFeed}) {
              
               
       }),
-      credentials:"include"
+      
   });
   console.log(res)
   const data1 = await res.json();
