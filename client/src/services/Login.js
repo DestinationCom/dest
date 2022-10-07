@@ -64,7 +64,8 @@ export default function Login({handleClick,handleFeed}) {
               mobile_num:data.get('mobile_number'),
              
               
-      })
+      }),
+      credentials:"include"
   });
   console.log(res)
   const data1 = await res.json();
