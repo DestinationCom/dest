@@ -168,7 +168,7 @@ router.post('/api/signin', async(req,res)=>{
                 expires:new Date(Date.now()+ 900000),
                 // 300000
                 httpOnly:true,
-                domain:'http://destapp1.herokuapp.com'
+                // domain:'http://destapp1.herokuapp.com'
             });
 
             res.status(200).json({message:'Login Successful'});
