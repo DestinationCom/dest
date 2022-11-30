@@ -88,16 +88,9 @@ export default function Details (props) {
   </div>
   <div>
        
-        {/* <Popup trigger={<button> Contact to Owner</button>} position="right center">
-          
-        <div>{users.mobile_num} 
-        
-        </div>
-        
-        </Popup>
-         */}
+       
   </div>
-  <div><a href= "tel:+919764198037"><button id="bt" >Click</button> </a></div>
+  <div><a href= {'tel:+91'+ users.mobile_num}  ><button id="bt" >Contact to Owner</button> </a></div>
         
   <div className='title1'>
     <b className='t2'>{users.owner_name}</b>
