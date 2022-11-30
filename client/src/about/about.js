@@ -70,7 +70,7 @@ const About =() =>{
          <div style={{textAlign:'center'}}>Welcome   <b>{vehicle.owner_name}</b></div>
          
          <div>
-         {isEdit == false ? 
+         {!isEdit  ? 
          
          
           <div class='container'>

@@ -84,12 +84,12 @@ body{
     border-radius: 5px;
   
   }
-  button:hover{
+  /* button:hover{
     background-color :rgb(147, 112, 243);
     color:white;
     transition: .5s;
     cursor:pointer
-  }
+  } */
 
   @media screen and (max-width: 700px) {
     .cards1{
@@ -136,6 +136,7 @@ body{
     button{
       margin-top: 20px;
       margin-bottom: 20px;
+      
       border: 1px solid black;
       padding:5px;
       border-radius: 5px;

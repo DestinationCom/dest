@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Employees from "./pages/Employees/Employees";
 import Login from './services/Login'
+
 import Premium from './services/Premium'
 import Dashboard from './pages/home/Dashboard';
 import Details from './detail/details/Details';
@@ -21,7 +22,8 @@ import Profile from './Profile/profile';
 import Vehicle from './pages/vehicleType/vehicleType';
 import ChangePassword from './services/changePass';
 import ForgetPassword from './services/forgetPass';
-import Admin from './admin/admin';
+// import {AuthContext} from './Api/AuthContext';
+// import Admin from './admin/admin';
 
 
 
@@ -79,18 +81,22 @@ function App() {
         <Routes> 
        
           <Route path="/"  element={<Dashboard/>}/>
-           <Route  path="/register" element={<Employees/>}/>
-           <Route  path="/signup" element={<Login/>}/>
-         <Route exact path="/home/:_id/:vehicleNumber/:mobile" element={<Details/>}/>
-         <Route  path="/premium" element={<Premium/>}/>
+          <Route  path="/register" element={<Employees/>}/>
+
+
+          <Route  path="/signup" element={<Login/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/profile" element={<Profile/>}/>
+           
+          <Route exact path="/home/:_id/:vehicleNumber/:mobile" element={<Details/>}/>
+          <Route  path="/premium" element={<Premium/>}/>
          
          {/* <Route path="/edit/:vehicleNumber/:mobile" element={<Edit/>}/> */}
-         <Route path="/about" element={<About/>}/>
-         <Route path="/profile" element={<Profile/>}/>
+         
          <Route path='/vehicle/:veehicleType' element={<Vehicle/>}/>
          <Route path='/change_password' element={<ChangePassword/>}/>
          <Route path='/forget_password' element={<ForgetPassword/>}/>
-         <Route path='/admin' element={<Admin/>}/>
+         {/* <Route path='/admin' element={<Admin/>}/> */}
          
          </Routes> 
        

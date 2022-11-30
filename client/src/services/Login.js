@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useContext} from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -18,6 +18,8 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Footer from '../footer/footer'
 
 import {useNavigate} from 'react-router-dom'; 
+// import {AuthContext} from '../Api/AuthContext';
+
 
 function Copyright(props) {
   return (
@@ -36,7 +38,7 @@ const theme = createTheme();
 
 export default function Login({handleClick,handleFeed}) {
 
-  
+  // const isLogged = React.useContext(AuthContext);
 
   const navigate=useNavigate();
   
@@ -84,7 +86,7 @@ export default function Login({handleClick,handleFeed}) {
       
       alert(data1.message);
       const tokenNew=(data1.token);
-      localStorage.setItem("Token",tokenNew);
+      // localStorage.setItem("Token",tokenNew);
       console.log(tokenNew)
       
         navigate(`/about`);
@@ -115,6 +117,7 @@ export default function Login({handleClick,handleFeed}) {
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
             <LockOutlinedIcon />
           </Avatar>
+          {/* <h2>{isLogged}</h2> */}
           
           
           <Typography component="h1" variant="h5">
