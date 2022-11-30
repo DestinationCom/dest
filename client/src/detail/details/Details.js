@@ -96,8 +96,9 @@ export default function Details (props) {
         
         </Popup>
         
-         {/* "tel:+6199942413" */}
   </div>
+  <div><a href= "tel:+6199942413">call </a></div>
+        
   <div className='title1'>
     <b className='t2'>{users.owner_name}</b>
     
